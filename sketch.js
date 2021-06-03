@@ -26,7 +26,7 @@ function setup(){
   bound3=createSprite(400,300,750,5);
   bound3.shapeColor="white";
   bound4=createSprite(28,198,5,200);
-  bound4.shapeColor="black";
+  bound4.shapeColor="Yellow";
   ball=createSprite(760,200,20,10);
   ball.addImage(ballImage);
   ball.scale=0.2;
@@ -63,10 +63,10 @@ if(score===10){
 win();
 }
 
-fill("black");
+fill("Yellow");
 //stroke(20);
 textSize(41)
-text("The black colour line is the wicket",100,90)
+text("The Yellow line is the wicket",100,90)
 if(ball.isTouching(bound4)){
   score=score-1;
   ball.x=760;
